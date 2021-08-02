@@ -4,41 +4,41 @@ import axios from 'axios';
 
 const allPokemonURL = 'https://pokeapi.co/api/v2/pokemon?limit=898&offset=0';
 
-const URL = 'https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/all.json';
-
-const fetchPokemons = async (searchTerm = '', generation = '', type = '') => {
+const fetchPokemons = async (searchTerm = '', generation = '', type = '', pokeId = '') => {
   try {
     const { data } = await axios.get(allPokemonURL);
 
-    const superheroes = data.sort(() => Math.random() - 0.5);
+    const { results } = data;
 
-    const strippedSuperheroes = superheroes.map((superhero) => {
-      const {
-        name, powerstats,
-        appearance: { gender, race },
-        biography: { fullName, firstAppearance, publisher },
-        work: { occupation }, images: { lg: image },
-      } = superhero;
+    // const strippedPokemons = data.map((pokemon) => {
+    //   const {
+    //     name, powerstats,
+    //     appearance: { gender, race },
+    //     biography: { fullName, firstAppearance, publisher },
+    //     work: { occupation }, images: { lg: image },
+    //   } = superhero;
 
-      const strippedSuperhero = {
-        name, powerstats, gender, race, fullName, firstAppearance, publisher, occupation, image,
-      };
+    //   const strippedSuperhero = {
+    //     name, powerstats, gender, race, fullName, firstAppearance, publisher, occupation, image,
+    //   };
 
-      return strippedSuperhero;
-    });
+    //   return strippedSuperhero;
+    // });
 
-    const searchedSuperheroes = strippedSuperheroes
-      .filter((superHero) => superHero.name.toLowerCase().startsWith(searchTerm.toLowerCase()));
+    // const searchedSuperheroes = strippedSuperheroes
+    //   .filter((superHero) => superHero.name.toLowerCase().startsWith(searchTerm.toLowerCase()));
 
-    const filteredSuperheroes = searchedSuperheroes
-      .filter((superHero) => superHero.gender.includes(gender));
-    if (!searchTerm) {
-      return filteredSuperheroes.slice(0, 5);
-    }
-    return filteredSuperheroes;
+    // const filteredSuperheroes = searchedSuperheroes
+    //   .filter((superHero) => superHero.gender.includes(gender));
+    // if (!searchTerm) {
+    //   return filteredSuperheroes.slice(0, 5);
+    // }
+    // return filteredSuperheroes;
+    console.log(results[400]);
+    return results;
   } catch (error) {
     console.log(error);
   }
 };
 
-export default fetchHeroes;
+export default fetchPokemons;
