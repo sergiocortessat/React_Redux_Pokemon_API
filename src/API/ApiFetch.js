@@ -1,11 +1,14 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable consistent-return */
 import axios from 'axios';
 
+const allPokemonURL = 'https://pokeapi.co/api/v2/pokemon?limit=898&offset=0';
+
 const URL = 'https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/all.json';
 
-const fetchHeroes = async (searchTerm = '', gender = '') => {
+const fetchPokemons = async (searchTerm = '', generation = '', type = '') => {
   try {
-    const { data } = await axios.get(URL);
+    const { data } = await axios.get(allPokemonURL);
 
     const superheroes = data.sort(() => Math.random() - 0.5);
 
