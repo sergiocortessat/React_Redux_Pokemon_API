@@ -34,7 +34,7 @@ const fetchPokemons = async (searchTerm = '', generation = '', type = '', pokeId
     //   return filteredSuperheroes.slice(0, 5);
     // }
     // return filteredSuperheroes;
-    console.log(results[400]);
+    // console.log(results[400]);
     return results;
   } catch (error) {
     console.log(error);
