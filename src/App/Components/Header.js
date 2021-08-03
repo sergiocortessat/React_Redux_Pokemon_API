@@ -1,13 +1,13 @@
+/* eslint-disable max-len */
+/* eslint-disable no-tabs */
 /* eslint-disable no-unused-vars */
+import { TextField } from '@material-ui/core';
 import React from 'react';
 
-const Header = () => {
-  const x = 0;
-  return (
-    <div>
-      <h1>HEADER GOES HERE</h1>
-    </div>
-  );
-};
+const Header = () => (
+  <div className="searchContainer">
+    <div>Logo goes here</div>
+  </div>
+);
 
 export default Header;
