@@ -1,9 +1,13 @@
+/* eslint-disable import/order */
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App/Components/App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 
 ReactDOM.render(
   <React.StrictMode>

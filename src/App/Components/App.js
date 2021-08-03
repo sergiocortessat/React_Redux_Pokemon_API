@@ -1,24 +1,18 @@
+/* eslint-disable import/extensions */
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
+import {
+  BrowserRouter as Router, Switch, Route,
+} from 'react-router-dom';
 import PokemonStat from '../Containers/PokemonStats';
-import fetchPokemon from '../../API/ApiFetch';
+import PokemonList from '../Containers/PokomenList';
+import Header from './Header';
 
 function App() {
-  const [pokemon, setPokemon] = useState([]);
-  useEffect(() => {
-    fetchPokemon().then((data) => {
-      setPokemon(data);
-    });
-  }, []);
   return (
     <div className="App">
-      {pokemon.map((pokemon) => (
-        <div key={pokemon.name} className="App-Pokemon">
-          <h2>{pokemon.name}</h2>
-          <h3>{pokemon.url}</h3>
-          <PokemonStat id={pokemon.url} name={pokemon.name} />
-        </div>
-      ))}
+      <Header />
+      <PokemonList />
     </div>
   );
 }
