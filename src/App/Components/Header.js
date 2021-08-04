@@ -3,10 +3,11 @@
 /* eslint-disable no-unused-vars */
 import { TextField } from '@material-ui/core';
 import React from 'react';
+import logo from '../../Assets/logo.svg';
 
 const Header = () => (
   <div className="searchContainer">
-    <div>Logo goes here</div>
+    <img src={logo} alt="nonso" />
   </div>
 );
 

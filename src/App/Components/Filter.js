@@ -6,23 +6,26 @@ import { types } from '../../staticData';
 
 const Filter = ({
   handleInput, handleClick, setInputFilter, inputFilter,
-}) => (
-  <>
-    <TextField
-      className="textField"
-      onClick={() => setInputFilter('')}
-      onChange={(e) => handleInput(e)}
-      variant="filled"
-      value={inputFilter}
-      label="Pokemon Name: "
-    />
-    <div className="types-filter">
-      {types.map((type) => (
-        <button type="button" key={type.name} className="type-filter-item" onClick={(e) => handleClick(e.target.innerText)}>{type.name}</button>
-      ))}
+}) => {
+  const x = 0;
+  return (
+    <>
+      <TextField
+        className="textField"
+        onClick={() => setInputFilter('')}
+        onChange={(e) => handleInput(e)}
+        variant="filled"
+        value={inputFilter}
+        label="Pokemon Name: "
+      />
+      <div className="types-filter">
+        {types.map((type) => (
+          <button type="button" key={type.name} className="type-filter-item" onClick={(e) => handleClick(e.target.innerText)}>{type.name}</button>
+        ))}
 
-    </div>
-  </>
-);
+      </div>
+    </>
+  );
+};
 
 export default Filter;
