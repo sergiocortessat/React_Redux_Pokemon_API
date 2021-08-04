@@ -3,29 +3,27 @@
 import React from 'react';
 import { TextField } from '@material-ui/core';
 import { types } from '../../staticData';
+import Button from './Button';
 
 const Filter = ({
   handleInput, handleClick, setInputFilter, inputFilter,
-}) => {
-  const x = 0;
-  return (
-    <>
-      <TextField
-        className="textField"
-        onClick={() => setInputFilter('')}
-        onChange={(e) => handleInput(e)}
-        variant="filled"
-        value={inputFilter}
-        label="Pokemon Name: "
-      />
-      <div className="types-filter">
-        {types.map((type) => (
-          <button type="button" key={type.name} className="type-filter-item" onClick={(e) => handleClick(e.target.innerText)}>{type.name}</button>
-        ))}
+}) => (
+  <>
+    <TextField
+      className="textField"
+      onClick={() => setInputFilter('')}
+      onChange={(e) => handleInput(e)}
+      variant="filled"
+      value={inputFilter}
+      label="Pokemon Name: "
+    />
+    <div className="types-filter">
+      {types.map((type) => (
+        <Button key={type.color} type={type} handleClick={handleClick} />
+      ))}
 
-      </div>
-    </>
-  );
-};
+    </div>
+  </>
+);
 
 export default Filter;
