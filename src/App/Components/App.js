@@ -14,7 +14,7 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
-          <Route exact path="/stats" component={PokemonStat} />
+          <Route exact path="/stats/:id" component={PokemonStat} />
           <Route path="/" component={PokemonList} />
         </Switch>
       </div>

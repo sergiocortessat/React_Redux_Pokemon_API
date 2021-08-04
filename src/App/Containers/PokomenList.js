@@ -8,7 +8,7 @@ import Filter from '../Components/Filter';
 import { updatePokemonSearchResults, updateFilteredPokemonSearchResults } from '../../Redux/Slices/homeFetchSlice';
 
 const PokemonList = () => {
-  // const [pokemon, setPokemon] = useState([]);
+  const [pokemon, setPokemon] = useState([]);
   const [reset, setReset] = useState(false);
   const [typePokemon, setTypePokemon] = useState([]);
   const [filteredPokemon, setFilteredPokemon] = React.useState([]);
@@ -17,11 +17,13 @@ const PokemonList = () => {
   const dispatch = useDispatch();
   const handleClick = (type) => {
     if (type !== 'Reset' && typePokemon.length < 2) {
-      dispatch(updateFilteredPokemonSearchResults(updatePokemonSearchResults.filter((item) => item.type[0] === type || item.type[1] === type)));
+      const filtered = filteredPokemon.filter((item) => item.type[0] === type || item.type[1] === type);
+      // console.log(filteredPokemon);
+      // dispatch(updateFilteredPokemonSearchResults(updatePokemonSearchResults.filter((item) => item.type[0] === type || item.type[1] === type)));
       // setFilteredPokemon(filteredPokemon.filter((item) => item.type[0] === type || item.type[1] === type));
+      setFilteredPokemon(filtered);
       setTypePokemon((previous) => [type, ...previous]);
-      console.log(typePokemon.length);
-      console.log(filteredPokemonSearchResults);
+      // console.log(typePokemon.length);
     } else {
       setTypePokemon([]);
       setReset(true);
@@ -29,23 +31,26 @@ const PokemonList = () => {
   };
   const handleInput = (e) => {
     setInputFilter(e.target.value);
-    dispatch(updateFilteredPokemonSearchResults(pokemonSearchResults.filter((item) => item.english.toLowerCase().includes(e.target.value.toLowerCase()))));
-    // setFilteredPokemon(pokemonSearchResults.filter((item) => item.english.toLowerCase().includes(e.target.value.toLowerCase())));
+    // dispatch(updateFilteredPokemonSearchResults(pokemonSearchResults.filter((item) => item.english.toLowerCase().includes(e.target.value.toLowerCase()))));
+    const filter = pokemonSearchResults.filter((item) => item.english.toLowerCase().includes(e.target.value.toLowerCase()));
+    // setFilteredPokemon(pokemon.filter((item) => item.english.toLowerCase().includes(e.target.value.toLowerCase())));
+    setFilteredPokemon(filter);
   };
 
   useEffect(() => {
     fetchPokemon().then((data) => {
       dispatch(updatePokemonSearchResults(data));
       // setPokemon(data);
-      dispatch(updateFilteredPokemonSearchResults(data));
       setFilteredPokemon(data);
+      // dispatch(updateFilteredPokemonSearchResults(data));
     });
     setReset(false);
   }, [reset]);
+
   return (
     <div>
       <Filter handleInput={handleInput} handleClick={handleClick} setInputFilter={setInputFilter} inputFilter={inputFilter} />
-      {filteredPokemonSearchResults && filteredPokemonSearchResults.map((pokemon) => (
+      {filteredPokemon.map((pokemon) => (
         <div key={pokemon.id} className="App-Pokemon">
           <CardList pokemon={pokemon} />
         </div>

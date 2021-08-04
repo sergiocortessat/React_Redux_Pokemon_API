@@ -1,8 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  pokemonSearchResults: null,
-  filteredPokemonSearchResults: null,
+  pokemonSearchResults: [],
+  filteredPokemonSearchResults: [],
 };
 
 export const homeSlice = createSlice({
