@@ -6,6 +6,7 @@ import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { updatePokemonSearchResults, updateFilteredPokemonSearchResults } from '../../Redux/Slices/homeFetchSlice';
 import fetchPokemon from '../../API/ApiFetch';
+import PokemonStatCard from '../Components/PokemonStatCard';
 
 const PokemonStat = () => {
   const { id } = useParams();
@@ -37,23 +38,7 @@ const PokemonStat = () => {
   return (
     singlePokemon
     && (
-      <div>
-
-        <h1>{id}</h1>
-        <p>
-          {singlePokemon.id}
-        </p>
-        <p>
-          {singlePokemon.english}
-        </p>
-        <p>
-          {singlePokemon.japanese}
-        </p>
-        <p>
-          {singlePokemon.thumbnail}
-        </p>
-        <img src={singlePokemon.hires} alt={singlePokemon.id} />
-      </div>
+    <PokemonStatCard pokemon={singlePokemon} />
     )
   );
 };
