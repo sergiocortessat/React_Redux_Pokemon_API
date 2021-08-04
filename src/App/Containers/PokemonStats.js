@@ -9,20 +9,27 @@ import fetchPokemon from '../../API/ApiFetch';
 
 const PokemonStat = () => {
   const { id } = useParams();
-  const pokemon = {};
+  const [render, setRender] = useState(false);
   const [singlePokemon, setSinglePokemon] = useState({});
   // const { pokemonSearchResults, filteredPokemonSearchResults } = useSelector((state) => state.pokemon);
   // setSinglePokemon(pokemonSearchResults.filter((pokemon) => pokemon.id === Number(id)));
+  const dispatch = useDispatch();
+  const { pokemonSearchResults, filteredPokemonSearchResults } = useSelector((state) => state.pokemon);
 
   useEffect(() => {
     fetchPokemon().then((data) => {
-      setSinglePokemon(data.filter((pokemon) => pokemon.id === Number(id))[0]);
+      dispatch(updateFilteredPokemonSearchResults(data.filter((pokemon) => pokemon.id === Number(id))[0]));
+      // dispatch(updateFilteredPokemonSearchResults(data));
+      // setSinglePokemon(data.filter((pokemon) => pokemon.id === Number(id))[0]);
+      setRender(true);
     });
-  }, []);
+    setSinglePokemon(filteredPokemonSearchResults);
+  }, [render]);
   return (
     singlePokemon
-      && (
+    && (
       <div>
+
         <h1>{id}</h1>
         <p>
           {singlePokemon.id}
@@ -34,10 +41,11 @@ const PokemonStat = () => {
           {singlePokemon.japanese}
         </p>
         <p>
-          {singlePokemon.HP}
+          {singlePokemon.thumbnails}
         </p>
+        <img src={singlePokemon.thumbnails} alt={singlePokemon.id} />
       </div>
-      )
+    )
   );
 };
 
