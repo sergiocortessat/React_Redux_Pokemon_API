@@ -1,12 +1,10 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 
-const PokemonStat = ({ id, name }) => (
+const PokemonStat = () => (
   <div>
-    <h1>{id}</h1>
+    <h1>id</h1>
     <p>
-      {name}
-      {' '}
       again
     </p>
   </div>

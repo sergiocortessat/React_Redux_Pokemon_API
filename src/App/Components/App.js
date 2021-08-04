@@ -10,10 +10,15 @@ import Header from './Header';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <PokemonList />
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Switch>
+          <Route exact path="/stats" component={PokemonStat} />
+          <Route path="/" component={PokemonList} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
