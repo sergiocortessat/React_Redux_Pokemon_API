@@ -5,6 +5,7 @@ import {
   Link,
 } from 'react-router-dom';
 import PokemonStats from '../Containers/PokemonStats';
+import '../../Styles/PokemonListCard.scss';
 
 const CardListComponent = ({
   pokemon,
@@ -12,7 +13,7 @@ const CardListComponent = ({
   const x = 0;
   return (
     <Link to={`/stats/${pokemon.id}`}>
-      <div>
+      <div className="pokemon-list-card">
         <h2>{pokemon.id}</h2>
         <h2>{pokemon.japanese}</h2>
         <h2>{pokemon.english}</h2>
