@@ -9,7 +9,7 @@ import fetchPokemon from '../../API/ApiFetch';
 
 const PokemonStat = () => {
   const { id } = useParams();
-  const [render, setRender] = useState(false);
+  const [reset, setReset] = useState(false);
   const [singlePokemon, setSinglePokemon] = useState({});
   // const { pokemonSearchResults, filteredPokemonSearchResults } = useSelector((state) => state.pokemon);
   // setSinglePokemon(pokemonSearchResults.filter((pokemon) => pokemon.id === Number(id)));
@@ -17,14 +17,23 @@ const PokemonStat = () => {
   const { pokemonSearchResults, filteredPokemonSearchResults } = useSelector((state) => state.pokemon);
 
   useEffect(() => {
-    fetchPokemon().then((data) => {
-      dispatch(updateFilteredPokemonSearchResults(data.filter((pokemon) => pokemon.id === Number(id))[0]));
-      // dispatch(updateFilteredPokemonSearchResults(data));
-      // setSinglePokemon(data.filter((pokemon) => pokemon.id === Number(id))[0]);
-      setRender(true);
-    });
+    if (id !== singlePokemon.id || filteredPokemonSearchResults.length === 0) {
+      fetchPokemon().then((data) => {
+        dispatch(updateFilteredPokemonSearchResults(data.filter((pokemon) => pokemon.id === Number(id))[0]));
+        // dispatch(updateFilteredPokemonSearchResults(data));
+        // setSinglePokemon(data.filter((pokemon) => pokemon.id === Number(id))[0]);
+        setReset(true);
+      });
+    }
     setSinglePokemon(filteredPokemonSearchResults);
-  }, [render]);
+  }, [reset]);
+  if (singlePokemon.length < 1) {
+    return (
+      <div>
+        Loading....
+      </div>
+    );
+  }
   return (
     singlePokemon
     && (
@@ -41,9 +50,9 @@ const PokemonStat = () => {
           {singlePokemon.japanese}
         </p>
         <p>
-          {singlePokemon.thumbnails}
+          {singlePokemon.thumbnail}
         </p>
-        <img src={singlePokemon.thumbnails} alt={singlePokemon.id} />
+        <img src={singlePokemon.hires} alt={singlePokemon.id} />
       </div>
     )
   );
