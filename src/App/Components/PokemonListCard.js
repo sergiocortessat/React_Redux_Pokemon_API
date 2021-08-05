@@ -15,12 +15,14 @@ const CardListComponent = ({
     <Link to={`/stats/${pokemon.id}`} className="pokemon-list-link">
       <div className="pokemon-list-card">
         <div>
-          <h2>{pokemon.id}</h2>
-          <img src={pokemon.thumbnail} alt="" />
-          <h2>{pokemon.japanese}</h2>
-          <h2>{pokemon.english}</h2>
-          <h2>{`${pokemon.type[0]} - ${pokemon.type[1]}`}</h2>
-          <p>{pokemon.species}</p>
+          <h2>{`ID: ${pokemon.id}`}</h2>
+          <h3>{`NAME(JP): ${pokemon.japanese}`}</h3>
+          <h3>{`NAME(EN): ${pokemon.english}`}</h3>
+          <div className="pokemon-list-card-image-container">
+            <img src={pokemon.thumbnail} alt={pokemon.english} />
+          </div>
+          <h4>{`TYPE: ${pokemon.type[0]} - ${pokemon.type[1]}`}</h4>
+          <h4>{`SPECIES: ${pokemon.species}`}</h4>
         </div>
       </div>
     </Link>

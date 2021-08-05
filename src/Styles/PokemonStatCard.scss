@@ -1,0 +1,16 @@
+@media screen and (min-width: 767px) {
+  .wrapper {
+    perspective: 1000px;
+    margin: 4em auto;
+    width: 37em;
+
+    .inner {
+      transition: 0.3s;
+      transform: rotateY(40deg);
+    }
+
+    .inner:hover {
+      transform: rotate(0);
+    }
+  }
+}
