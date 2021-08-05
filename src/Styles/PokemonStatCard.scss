@@ -1,11 +1,38 @@
+.wrapper {
+  margin: 1em auto;
+  display: inline-block;
+  align-items: center;
+
+  .inner {
+    margin: 10px 10px 50px 10px;
+  }
+
+  .inner2 {
+    margin: 40px 50px 50px 50px;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    > * div {
+      margin-bottom: 10px;
+    }
+  }
+
+  .inner2:hover {
+    transform: rotate(0);
+  }
+}
+
 @media screen and (min-width: 767px) {
   .wrapper {
     perspective: 1000px;
     // perspective-origin: 15% 100%;
-    margin: 10em auto;
+    margin: 10em 1em;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
     .inner {
