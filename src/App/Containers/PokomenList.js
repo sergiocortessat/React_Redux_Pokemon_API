@@ -57,9 +57,7 @@ const PokemonList = () => {
       {/* Pokemon List component */}
       <div className="pokemon-list-items">
         {pokemon.map((pokemon) => (
-          <div key={pokemon.id} className="App-Pokemon">
-            <CardList pokemon={pokemon} />
-          </div>
+          <CardList key={pokemon.id} pokemon={pokemon} />
         ))}
       </div>
     </div>

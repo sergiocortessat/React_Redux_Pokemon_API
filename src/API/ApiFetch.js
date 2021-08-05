@@ -15,22 +15,26 @@ const fetchPokemons = async (searchTerm = '', generation = '', type = '', pokeId
       const {
         id, species, description,
         base,
-        evolution: { next },
+        evolution,
         name: { english, japanese },
         hires,
-        profile,
+        profile: { height, weight },
         sprite,
         thumbnail,
         type,
       } = pokemon;
-      let HP = '';
-      base ? HP = base.HP : HP;
+      const HP = base ? base.HP : 'Unavailable';
+      const Attack = base ? base.Attack : 'Unavailable';
+      const Defense = base ? base.Defense : 'Unavailable';
+      const SpecialAttack = base ? base['Sp. Attack'] : 'Unavailable';
+      const SpecialDefense = base ? base['Sp. Defense'] : 'Unavailable';
+      const Speed = base ? base.Speed : 'Unavailable';
 
       // console.log(HP);
       // // const { HP } = pokemon.base;
 
       const stripped = {
-        id, species, description, next, english, japanese, profile, sprite, thumbnail, hires, type, HP,
+        id, species, description, evolution, english, japanese, height, weight, sprite, thumbnail, hires, type, HP, Attack, Defense, SpecialAttack, SpecialDefense, Speed,
       };
 
       return stripped;
