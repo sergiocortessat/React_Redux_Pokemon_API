@@ -9,10 +9,18 @@
     .inner {
       transition: 0.3s;
       transform: rotateY(40deg);
-
     }
 
     .inner:hover {
+      transform: rotate(0);
+    }
+
+    .inner2 {
+      transition: 0.3s;
+      transform: rotateY(-40deg);
+    }
+
+    .inner2:hover {
       transform: rotate(0);
     }
   }

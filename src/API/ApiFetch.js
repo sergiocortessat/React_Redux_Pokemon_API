@@ -18,7 +18,7 @@ const fetchPokemons = async (searchTerm = '', generation = '', type = '', pokeId
         evolution,
         name: { english, japanese },
         hires,
-        profile: { height, weight },
+        profile: { height, weight, ability },
         sprite,
         thumbnail,
         type,
@@ -34,7 +34,7 @@ const fetchPokemons = async (searchTerm = '', generation = '', type = '', pokeId
       // // const { HP } = pokemon.base;
 
       const stripped = {
-        id, species, description, evolution, english, japanese, height, weight, sprite, thumbnail, hires, type, HP, Attack, Defense, SpecialAttack, SpecialDefense, Speed,
+        id, species, description, evolution, english, japanese, height, weight, ability, sprite, thumbnail, hires, type, HP, Attack, Defense, SpecialAttack, SpecialDefense, Speed,
       };
 
       return stripped;
