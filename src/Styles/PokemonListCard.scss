@@ -1,5 +1,9 @@
-.pokemon-list-card {
-  background-color: salmon;
-  border: 1px solid black;
-  border-radius: 5px;
+.pokemon-list-items {
+  width: 100%;
+
+  .pokemon-list-card {
+    background-color: salmon;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
 }

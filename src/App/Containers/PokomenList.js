@@ -52,12 +52,16 @@ const PokemonList = () => {
 
   return (
     <div>
+      {/* Filter component */}
       <Filter handleInput={handleInput} handleClick={handleClick} setInputFilter={setInputFilter} inputFilter={inputFilter} />
-      {pokemon.map((pokemon) => (
-        <div key={pokemon.id} className="App-Pokemon">
-          <CardList pokemon={pokemon} />
-        </div>
-      ))}
+      {/* Pokemon List component */}
+      <div className="pokemon-list-items">
+        {pokemon.map((pokemon) => (
+          <div key={pokemon.id} className="App-Pokemon">
+            <CardList pokemon={pokemon} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

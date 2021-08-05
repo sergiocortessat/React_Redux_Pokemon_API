@@ -5,7 +5,10 @@ const Button = ({ type, handleClick }) => (
   <button
     type="button"
     className="type-filter-item"
-    style={{ backgroundColor: type.color }}
+    style={{
+      backgroundColor: type.color,
+      color: type.text,
+    }}
     onClick={(e) => handleClick(e.target.innerText)}
   >
     {type.name}

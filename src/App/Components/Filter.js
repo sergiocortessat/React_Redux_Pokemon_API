@@ -4,6 +4,7 @@ import React from 'react';
 import { TextField } from '@material-ui/core';
 import { types } from '../../staticData';
 import Button from './Button';
+import '../../Styles/Filter.scss';
 
 const Filter = ({
   handleInput, handleClick, setInputFilter, inputFilter,

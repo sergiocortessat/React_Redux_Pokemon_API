@@ -4,6 +4,7 @@
 import { TextField } from '@material-ui/core';
 import React from 'react';
 import logo from '../../Assets/logo.svg';
+import '../../Styles/Header.scss';
 
 const Header = () => (
   <div className="searchContainer">

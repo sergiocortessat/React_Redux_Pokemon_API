@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+.textField {
+  display: flex !important;
+  margin: 0 auto !important;
+  margin: 5px 20px 30px 20px !important;
+
+  label {
+    font-family: VT323, sans-serif !important;
+  }
+
+  div > input {
+    font-family: VT323, sans-serif !important;
+  }
+}
+
+.types-filter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+
+  button {
+    width: auto;
+    padding: 8px 10px;
+    border-radius: 2em;
+    margin: 0 5px 8px 5px;
+    border: 0.2px solid black;
+    cursor: pointer;
+  }
+  // button highlighted
+  button:hover {
+    border: 2px solid black !important;
+  }
+}
