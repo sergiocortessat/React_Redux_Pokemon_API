@@ -1,14 +1,18 @@
 @media screen and (min-width: 767px) {
   .wrapper {
     perspective: 1000px;
-    perspective-origin: 15% 100%;
+    // perspective-origin: 15% 100%;
     margin: 10em auto;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 
     .inner {
       transition: 0.3s;
       transform: rotateY(40deg);
+      width: 300px;
+      height: 335px;
     }
 
     .inner:hover {
@@ -18,6 +22,8 @@
     .inner2 {
       transition: 0.3s;
       transform: rotateY(-40deg);
+      width: 300px;
+      height: 400px;
     }
 
     .inner2:hover {
