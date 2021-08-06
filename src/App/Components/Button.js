@@ -19,10 +19,18 @@ const Button = ({ type, handleClick }) => {
     </button>
   );
 };
+Button.defaultProps = {
+  type: {
+    name: '',
+    color: '',
+    text: '',
+  },
+  handleClick: () => {},
+};
 
 Button.propTypes = {
-  type: PropTypes.objectOf(PropTypes.string).isRequired,
-  handleClick: PropTypes.func.isRequired,
+  type: PropTypes.objectOf(PropTypes.string),
+  handleClick: PropTypes.func,
 };
 
 export default Button;

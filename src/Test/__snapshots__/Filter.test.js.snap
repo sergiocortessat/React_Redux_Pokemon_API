@@ -1,0 +1,649 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filter should match with snapshot 1`] = `
+Array [
+  <div
+    className="MuiFormControl-root MuiTextField-root textField"
+    onClick={[Function]}
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-filled"
+      data-shrink={false}
+    >
+      Pokemon Name: 
+    </label>
+    <div
+      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiFilledInput-input"
+        disabled={false}
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>,
+  <div
+    className="types-filter"
+    data-testid="filter"
+  >
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#94bc4a",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Bug
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#736c75",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Dark
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#6a7baf",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Dragon
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#e5c531",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Electric
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#e397d1",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Fairy
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#cb5f48",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Fighting
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#ea7a3c",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Fire
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#7da6de",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Flying
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#846ab6",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Ghost
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#71c558",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Grass
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#cc9f4f",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Ground
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#70cbd4",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Ice
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#aab09f",
+          "color": "black",
+        }
+      }
+      type="button"
+    >
+      Normal
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#b468b7",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Poison
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#e5709b",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Psychic
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#b2a061",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Rock
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#89a1b0",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Steel
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#539ae2",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Water
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "red",
+          "color": "black",
+        }
+      }
+      type="button"
+    >
+      Reset
+       
+    </button>
+  </div>,
+]
+`;
+
+exports[`Header with Link should match with snapshot 1`] = `
+Array [
+  <div
+    className="MuiFormControl-root MuiTextField-root textField"
+    onClick={[Function]}
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-filled"
+      data-shrink={false}
+    >
+      Pokemon Name: 
+    </label>
+    <div
+      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiFilledInput-input"
+        disabled={false}
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>,
+  <div
+    className="types-filter"
+    data-testid="filter"
+  >
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#94bc4a",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Bug
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#736c75",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Dark
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#6a7baf",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Dragon
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#e5c531",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Electric
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#e397d1",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Fairy
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#cb5f48",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Fighting
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#ea7a3c",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Fire
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#7da6de",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Flying
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#846ab6",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Ghost
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#71c558",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Grass
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#cc9f4f",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Ground
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#70cbd4",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Ice
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#aab09f",
+          "color": "black",
+        }
+      }
+      type="button"
+    >
+      Normal
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#b468b7",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Poison
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#e5709b",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Psychic
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#b2a061",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Rock
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#89a1b0",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Steel
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#539ae2",
+          "color": "white",
+        }
+      }
+      type="button"
+    >
+      Water
+       
+    </button>
+    <button
+      className="type-filter-item"
+      data-testid="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "red",
+          "color": "black",
+        }
+      }
+      type="button"
+    >
+      Reset
+       
+    </button>
+  </div>,
+]
+`;

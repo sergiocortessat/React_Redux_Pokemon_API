@@ -36,7 +36,7 @@ const PokemonStatCard = ({ pokemon }) => {
         </h2>
         <h2>
           WEIGHT
-          {' '}
+          {' '}PokemonStats
           {pokemon.weight}
         </h2>
         {pokemon.type && (
@@ -99,26 +99,40 @@ const PokemonStatCard = ({ pokemon }) => {
   );
 };
 
+PokemonStatCard.defaultProps = {
+  pokemon: {
+    id: '',
+    name: '',
+    height: 0,
+    weight: 0,
+    type: [],
+    evolution: {},
+    ability: [],
+    description: '',
+    hires: '',
+  },
+};
+
 PokemonStatCard.propTypes = {
   pokemon: PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    height: PropTypes.number.isRequired,
-    weight: PropTypes.number.isRequired,
-    type: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired,
+    id: PropTypes.string,
+    name: PropTypes.string,
+    height: PropTypes.number,
+    weight: PropTypes.number,
+    type: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)),
     evolution: PropTypes.shape({
-      next: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired,
-    }).isRequired,
-    ability: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired,
-    description: PropTypes.string.isRequired,
-    hires: PropTypes.string.isRequired,
-    HP: PropTypes.number.isRequired,
-    Attack: PropTypes.number.isRequired,
-    Defense: PropTypes.number.isRequired,
-    SpecialAttack: PropTypes.number.isRequired,
-    SpecialDefense: PropTypes.number.isRequired,
-    Speed: PropTypes.number.isRequired,
-  }).isRequired,
+      next: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)),
+    }),
+    ability: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)),
+    description: PropTypes.string,
+    hires: PropTypes.string,
+    HP: PropTypes.number,
+    Attack: PropTypes.number,
+    Defense: PropTypes.number,
+    SpecialAttack: PropTypes.number,
+    SpecialDefense: PropTypes.number,
+    Speed: PropTypes.number,
+  }),
 };
 
 export default PokemonStatCard;

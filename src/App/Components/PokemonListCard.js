@@ -23,16 +23,26 @@ const CardListComponent = ({
     </div>
   </Link>
 );
-
+// default props
+CardListComponent.defaultProps = {
+  pokemon: {
+    id: 0,
+    japanese: '',
+    english: '',
+    type: ['', ''],
+    species: '',
+    thumbnail: '',
+  },
+};
 CardListComponent.propTypes = {
   pokemon: PropTypes.shape({
-    id: PropTypes.number.isRequired,
-    japanese: PropTypes.string.isRequired,
-    english: PropTypes.string.isRequired,
-    type: PropTypes.arrayOf(PropTypes.string).isRequired,
-    species: PropTypes.string.isRequired,
-    thumbnail: PropTypes.string.isRequired,
-  }).isRequired,
+    id: PropTypes.number,
+    japanese: PropTypes.string,
+    english: PropTypes.string,
+    type: PropTypes.arrayOf(PropTypes.string),
+    species: PropTypes.string,
+    thumbnail: PropTypes.string,
+  }),
 };
 
 export default CardListComponent;

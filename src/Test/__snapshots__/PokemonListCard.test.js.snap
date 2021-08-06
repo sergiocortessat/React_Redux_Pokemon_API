@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pokemon List Card should match with snapshot 1`] = `
+<a
+  className="pokemon-list-link"
+  data-testid="list"
+  href="/stats/0"
+  onClick={[Function]}
+>
+  <div
+    className="pokemon-list-card"
+  >
+    <div>
+      <h2>
+        ID: 0
+      </h2>
+      <h3>
+        NAME(JP): 
+      </h3>
+      <h3>
+        NAME(EN): 
+      </h3>
+      <div
+        className="pokemon-list-card-image-container"
+      >
+        <img
+          alt=""
+          src=""
+        />
+      </div>
+      <h4>
+        TYPE:  - 
+      </h4>
+      <h4>
+        SPECIES: 
+      </h4>
+    </div>
+  </div>
+</a>
+`;
+
+exports[`Pokemon List Card with Link should match with snapshot 1`] = `
+<a
+  className="pokemon-list-link"
+  data-testid="list"
+  href="/stats/0"
+  onClick={[Function]}
+>
+  <div
+    className="pokemon-list-card"
+  >
+    <div>
+      <h2>
+        ID: 0
+      </h2>
+      <h3>
+        NAME(JP): 
+      </h3>
+      <h3>
+        NAME(EN): 
+      </h3>
+      <div
+        className="pokemon-list-card-image-container"
+      >
+        <img
+          alt=""
+          src=""
+        />
+      </div>
+      <h4>
+        TYPE:  - 
+      </h4>
+      <h4>
+        SPECIES: 
+      </h4>
+    </div>
+  </div>
+</a>
+`;

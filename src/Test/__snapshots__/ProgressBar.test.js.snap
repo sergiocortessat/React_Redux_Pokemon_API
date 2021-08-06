@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header with Link should match with snapshot 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "#e0e0de",
+      "borderRadius": 50,
+      "height": 20,
+      "margin": 10,
+      "width": "100%",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#e0e0de",
+        "borderRadius": "inherit",
+        "height": "100%",
+        "textAlign": "right",
+        "transition": "width 1s ease-in-out",
+        "width": "0%",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "color": "white",
+          "fontWeight": "bold",
+          "padding": 5,
+        }
+      }
+    >
+      0%
+    </span>
+  </div>
+</div>
+`;

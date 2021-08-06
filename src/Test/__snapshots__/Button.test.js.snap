@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button to sort should match with snapshot 1`] = `
+<button
+  className="type-filter-item"
+  data-testid="button"
+  onClick={[Function]}
+  style={
+    Object {
+      "backgroundColor": "",
+      "color": "",
+    }
+  }
+  type="button"
+>
+  
+   
+</button>
+`;
+
+exports[`Header with Link should match with snapshot 1`] = `
+<button
+  className="type-filter-item"
+  data-testid="button"
+  onClick={[Function]}
+  style={
+    Object {
+      "backgroundColor": "",
+      "color": "",
+    }
+  }
+  type="button"
+>
+  
+   
+</button>
+`;

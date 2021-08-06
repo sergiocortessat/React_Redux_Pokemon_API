@@ -35,10 +35,14 @@ const ProgressBar = (props) => {
     </div>
   );
 };
-// Proptypes
+ProgressBar.defaultProps = {
+  bgcolor: '#e0e0de',
+  completed: 0,
+};
+
 ProgressBar.propTypes = {
-  bgcolor: PropTypes.string.isRequired,
-  completed: PropTypes.number.isRequired,
+  bgcolor: PropTypes.string,
+  completed: PropTypes.number,
 };
 
 export default ProgressBar;

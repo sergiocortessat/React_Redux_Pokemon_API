@@ -17,7 +17,7 @@ const Filter = ({
       value={inputFilter}
       label="Pokemon Name: "
     />
-    <div className="types-filter" data-testid="types-filter">
+    <div className="types-filter" data-testid="filter">
       {types.map((type) => (
         <Button key={type.color} type={type} handleClick={handleClick} />
       ))}
@@ -25,12 +25,19 @@ const Filter = ({
     </div>
   </>
 );
+// default props
+Filter.defaultProps = {
+  handleInput: () => {},
+  handleClick: () => {},
+  setInputFilter: () => {},
+  inputFilter: '',
+};
 
 Filter.propTypes = {
-  handleInput: PropTypes.func.isRequired,
-  handleClick: PropTypes.func.isRequired,
-  setInputFilter: PropTypes.func.isRequired,
-  inputFilter: PropTypes.string.isRequired,
+  handleInput: PropTypes.func,
+  handleClick: PropTypes.func,
+  setInputFilter: PropTypes.func,
+  inputFilter: PropTypes.string,
 };
 
 export default Filter;

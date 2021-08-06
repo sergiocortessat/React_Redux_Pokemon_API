@@ -1,8 +1,7 @@
 import axios from 'axios';
 
-const allPokemonURL2 = 'https://app.pokemon-api.xyz/pokemon/all';
-
 const fetchPokemons = async () => {
+  const allPokemonURL2 = 'https://app.pokemon-api.xyz/pokemon/all';
   try {
     const { data } = await axios.get(allPokemonURL2);
 
