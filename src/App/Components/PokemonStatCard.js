@@ -36,7 +36,8 @@ const PokemonStatCard = ({ pokemon }) => {
         </h2>
         <h2>
           WEIGHT
-          {' '}PokemonStats
+          {' '}
+          PokemonStats
           {pokemon.weight}
         </h2>
         {pokemon.type && (

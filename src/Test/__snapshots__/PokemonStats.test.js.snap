@@ -1,51 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header with Link should match with snapshot 1`] = `
-<div
-  className="wrapper"
->
-  <div
-    className="inner info"
-  >
-    <h2>
-      ID
-       
-      #
-    </h2>
-    <h2>
-      HEIGHT
-       
-    </h2>
-    <h2>
-      WEIGHT
-       
-      PokemonStats
-    </h2>
-    <div
-      className="description"
-    >
-      <h2>
-        DESCRIPTION
-      </h2>
-      <h3 />
-    </div>
-  </div>
-  <div
-    className="stats-image"
-  >
-    <img />
-  </div>
-  <div
-    className="inner2 stats"
-  >
-    <h2>
-      POKEMON STATS
-    </h2>
-    <div />
-  </div>
-</div>
-`;
-
 exports[`Pokemon stats should match with snapshot 1`] = `
 <div
   className="wrapper"
