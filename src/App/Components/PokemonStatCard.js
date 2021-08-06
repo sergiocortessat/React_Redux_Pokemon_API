@@ -1,12 +1,11 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React, { useEffect, useState } from 'react';
+// import PropTypes from 'prop-types';
 import '../../Styles/PokemonStatCard.scss';
 import ProgressBar from './ProgressBar';
 
 const PokemonStatCard = ({ pokemon }) => {
   const [completed, setCompleted] = useState([]);
-  const [reset, setReset] = useState(false);
 
   const pokemonStats = [
     { name: 'HP', stat: pokemon.HP, color: '#00ff00' },
@@ -18,11 +17,6 @@ const PokemonStatCard = ({ pokemon }) => {
   ];
   useEffect(() => {
     setCompleted(([...pokemonStats]));
-    // if (pokemon.HP !== undefined) {
-    //   setReset(true);
-    // }
-    // setReset(false);
-    // setCompleted(String(pokemon.Attack));
   }, [pokemon]);
   return (
     <div className="wrapper">
@@ -103,5 +97,21 @@ const PokemonStatCard = ({ pokemon }) => {
 
   );
 };
+
+// PokemonStatCard.propTypes = {
+//   pokemon: PropTypes.shapeOf({
+//     id: PropTypes.string.isRequired,
+//     name: PropTypes.string.isRequired,
+//     height: PropTypes.number.isRequired,
+//     weight: PropTypes.number.isRequired,
+//     type: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired,
+//     evolution: PropTypes.shapeOf({
+//       next: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired,
+//     }).isRequired,
+//     ability: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired,
+//     description: PropTypes.string.isRequired,
+//     hires: PropTypes.string.isRequired,
+//   }).isRequired,
+// };
 
 export default PokemonStatCard;

@@ -1,6 +1,3 @@
-/* eslint-disable import/extensions */
-/* eslint-disable no-unused-vars */
-import React, { useState, useEffect } from 'react';
 import {
   BrowserRouter as Router, Switch, Route,
 } from 'react-router-dom';

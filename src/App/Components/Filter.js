@@ -1,7 +1,6 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
 import React from 'react';
 import { TextField } from '@material-ui/core';
+import PropTypes from 'prop-types';
 import { types } from '../../staticData';
 import Button from './Button';
 import '../../Styles/Filter.scss';
@@ -26,5 +25,12 @@ const Filter = ({
     </div>
   </>
 );
+
+Filter.propTypes = {
+  handleInput: PropTypes.func.isRequired,
+  handleClick: PropTypes.func.isRequired,
+  setInputFilter: PropTypes.func.isRequired,
+  inputFilter: PropTypes.string.isRequired,
+};
 
 export default Filter;
