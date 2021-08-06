@@ -33,7 +33,7 @@ exports[`Header with Link should match with snapshot 1`] = `
         }
       }
     >
-      0%
+      0 undefined
     </span>
   </div>
 </div>

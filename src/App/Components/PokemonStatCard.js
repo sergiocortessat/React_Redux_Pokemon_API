@@ -90,6 +90,7 @@ const PokemonStatCard = ({ pokemon }) => {
               <ProgressBar
                 bgcolor={stat.color}
                 completed={stat.stat}
+                tag={stat.color}
               />
             </div>
           ))}

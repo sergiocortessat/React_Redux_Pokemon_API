@@ -24,7 +24,7 @@ const PokemonStat = () => {
   }, [reset]);
   if (singlePokemon.length < 1) {
     return (
-      <div>
+      <div className="loading">
         Loading....
       </div>
     );
