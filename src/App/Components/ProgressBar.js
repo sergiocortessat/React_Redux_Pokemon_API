@@ -1,4 +1,5 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types';
+
 const ProgressBar = (props) => {
   const { bgcolor, completed } = props;
 
@@ -33,6 +34,11 @@ const ProgressBar = (props) => {
       </div>
     </div>
   );
+};
+// Proptypes
+ProgressBar.propTypes = {
+  bgcolor: PropTypes.string.isRequired,
+  completed: PropTypes.number.isRequired,
 };
 
 export default ProgressBar;

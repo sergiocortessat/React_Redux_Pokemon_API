@@ -15,6 +15,7 @@ const PokemonList = () => {
   const [inputFilter, setInputFilter] = React.useState('');
   const { pokemonSearchResults } = useSelector((state) => state.pokemon);
   const dispatch = useDispatch();
+
   const handleClick = (type) => {
     if (type !== 'Reset' && typePokemon.length < 2) {
       const filtered = pokemon.filter((item) => item.type[0] === type || item.type[1] === type);
@@ -29,6 +30,7 @@ const PokemonList = () => {
       setReset(true);
     }
   };
+
   const handleInput = (e) => {
     setInputFilter(e.target.value);
     // dispatch(updateFilteredPokemonSearchResults(pokemonSearchResults.filter((item) => item.english.toLowerCase().includes(e.target.value.toLowerCase()))));

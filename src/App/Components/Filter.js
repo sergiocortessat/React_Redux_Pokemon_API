@@ -17,7 +17,7 @@ const Filter = ({
       value={inputFilter}
       label="Pokemon Name: "
     />
-    <div className="types-filter">
+    <div className="types-filter" data-testid="types-filter">
       {types.map((type) => (
         <Button key={type.color} type={type} handleClick={handleClick} />
       ))}

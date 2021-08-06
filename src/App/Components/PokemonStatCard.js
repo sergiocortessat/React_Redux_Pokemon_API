@@ -1,6 +1,5 @@
-/* eslint-disable react/prop-types */
 import React, { useEffect, useState } from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import '../../Styles/PokemonStatCard.scss';
 import ProgressBar from './ProgressBar';
 
@@ -15,9 +14,11 @@ const PokemonStatCard = ({ pokemon }) => {
     { name: 'SPECIAL DEFENSE', stat: pokemon.SpecialDefense, color: '#00ffff' },
     { name: 'SPEED', stat: pokemon.Speed, color: '#ff00ff' },
   ];
+
   useEffect(() => {
     setCompleted(([...pokemonStats]));
   }, [pokemon]);
+
   return (
     <div className="wrapper">
       <div className="inner info">
@@ -98,20 +99,26 @@ const PokemonStatCard = ({ pokemon }) => {
   );
 };
 
-// PokemonStatCard.propTypes = {
-//   pokemon: PropTypes.shapeOf({
-//     id: PropTypes.string.isRequired,
-//     name: PropTypes.string.isRequired,
-//     height: PropTypes.number.isRequired,
-//     weight: PropTypes.number.isRequired,
-//     type: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired,
-//     evolution: PropTypes.shapeOf({
-//       next: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired,
-//     }).isRequired,
-//     ability: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired,
-//     description: PropTypes.string.isRequired,
-//     hires: PropTypes.string.isRequired,
-//   }).isRequired,
-// };
+PokemonStatCard.propTypes = {
+  pokemon: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    height: PropTypes.number.isRequired,
+    weight: PropTypes.number.isRequired,
+    type: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired,
+    evolution: PropTypes.shape({
+      next: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired,
+    }).isRequired,
+    ability: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired,
+    description: PropTypes.string.isRequired,
+    hires: PropTypes.string.isRequired,
+    HP: PropTypes.number.isRequired,
+    Attack: PropTypes.number.isRequired,
+    Defense: PropTypes.number.isRequired,
+    SpecialAttack: PropTypes.number.isRequired,
+    SpecialDefense: PropTypes.number.isRequired,
+    Speed: PropTypes.number.isRequired,
+  }).isRequired,
+};
 
 export default PokemonStatCard;
