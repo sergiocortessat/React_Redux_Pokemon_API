@@ -3,7 +3,8 @@
 .textField {
   display: flex !important;
   margin: 0 auto !important;
-  margin: 5px 20px 30px 20px !important;
+  margin: 5px auto 30px auto !important;
+  max-width: 400px !important;
 
   label {
     font-family: VT323, sans-serif !important;
@@ -33,5 +34,9 @@
   // button highlighted
   button:hover {
     border: 2px solid black !important;
+  }
+
+  button:active {
+    color: red;
   }
 }

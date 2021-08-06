@@ -6,6 +6,7 @@ import ProgressBar from './ProgressBar';
 
 const PokemonStatCard = ({ pokemon }) => {
   const [completed, setCompleted] = useState([]);
+  const [reset, setReset] = useState(false);
 
   const pokemonStats = [
     { name: 'HP', stat: pokemon.HP, color: '#00ff00' },
@@ -17,8 +18,12 @@ const PokemonStatCard = ({ pokemon }) => {
   ];
   useEffect(() => {
     setCompleted(([...pokemonStats]));
+    // if (pokemon.HP !== undefined) {
+    //   setReset(true);
+    // }
+    // setReset(false);
     // setCompleted(String(pokemon.Attack));
-  }, []);
+  }, [pokemon]);
   return (
     <div className="wrapper">
       <div className="inner info">
@@ -40,14 +45,14 @@ const PokemonStatCard = ({ pokemon }) => {
           {pokemon.weight}
         </h2>
         {pokemon.type && (
-        <div>
+        <div className="stat-type">
           <h2>TYPE</h2>
-          <h2>
+          <h3 className="type0">
             {pokemon.type[0]}
-          </h2>
-          <h2>
+          </h3>
+          <h3 className="type1">
             {pokemon.type[1]}
-          </h2>
+          </h3>
         </div>
         )}
         {pokemon.evolution && (
@@ -58,14 +63,14 @@ const PokemonStatCard = ({ pokemon }) => {
         </h2>
         )}
         {pokemon.ability && (
-        <div>
+        <div className="stat-ability">
           <h2>ABILITY</h2>
-          <h2>
+          <h3 className="ability1">
             {pokemon.ability[0] ? pokemon.ability[0][0] : '--'}
-          </h2>
-          <h2>
+          </h3>
+          <h3 className="ability2">
             {pokemon.ability[1] ? pokemon.ability[1][0] : '--'}
-          </h2>
+          </h3>
         </div>
         )}
         <div className="description">
@@ -82,14 +87,15 @@ const PokemonStatCard = ({ pokemon }) => {
         <h2>POKEMON STATS</h2>
         <div>
           {completed.map((stat) => (
-            <>
+            <div
+              key={stat.color}
+            >
               <h2>{stat.name}</h2>
               <ProgressBar
-                key={stat.name}
                 bgcolor={stat.color}
                 completed={stat.stat}
               />
-            </>
+            </div>
           ))}
         </div>
       </div>

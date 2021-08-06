@@ -5,14 +5,75 @@
 
   .inner {
     margin: 10px 10px 50px 10px;
+    background-color: rgba(247, 85, 85, 0.6);
+    border-radius: 10px;
+    border: 0.5px solid rgba(247, 85, 85, 0.6);
+    padding: 10px;
+    height: auto;
+
+    * {
+      margin-bottom: 8px;
+    }
+
+    .stat-type {
+      display: flex;
+      align-items: center;
+
+      h3 {
+        margin-left: 10px;
+      }
+
+      .type0 {
+        background-color: red;
+        padding: 3px;
+        border: 0.5px solid gray;
+        border-radius: 10px;
+      }
+
+      .type1 {
+        background-color: blue;
+        padding: 3px;
+        border: 0.5px solid gray;
+        border-radius: 10px;
+      }
+    }
+
+    .stat-ability {
+      display: flex;
+      align-items: center;
+
+      h3 {
+        margin-left: 10px;
+      }
+
+      .ability1 {
+        background-color: red;
+        padding: 3px;
+        border: 0.5px solid gray;
+        border-radius: 10px;
+      }
+
+      .ability2 {
+        background-color: blue;
+        padding: 3px;
+        border: 0.5px solid gray;
+        border-radius: 10px;
+      }
+    }
+
+    .stat-image {
+      width: 100%;
+      max-width: 80%;
+    }
   }
 
   .inner2 {
     margin: 40px 50px 50px 50px;
     text-align: center;
+    height: 400px;
 
     h2 {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     > * div {
@@ -28,7 +89,7 @@
 @media screen and (min-width: 767px) {
   .wrapper {
     perspective: 1000px;
-    // perspective-origin: 15% 100%;
+    // perspective-origin: 35% 100%;
     margin: 10em 1em;
     display: flex;
     flex-direction: row;
@@ -39,7 +100,7 @@
       transition: 0.3s;
       transform: rotateY(40deg);
       width: 300px;
-      height: 335px;
+      height: auto;
     }
 
     .inner:hover {
