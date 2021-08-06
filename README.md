@@ -12,7 +12,7 @@ the pokemon API project allows the users to load all pokemon's in existence unti
 
 ## Live Version
 
-* [Live Demo]() 
+* [Live Demo]("https://pokemon-api-searcher.herokuapp.com/") 
 
 <br />
 
@@ -81,7 +81,7 @@ Terminal or similar to execute the program.
 - $ npm start
 ```
 
-<!-- ## Testing
+## Testing
 
 The testing has been performed using Jest Framework. 
 
@@ -90,11 +90,11 @@ The testing has been performed using Jest Framework.
 - Enter npm run watch to keep jest test open
 
 ```
-- $ cd React_Calculator1
+- $ cd React_Redux_Pokemon_API
 - $ npm run test
 
 ```
-![Tests](test.png) -->
+![Tests](test.png)
 
 
 ## Authors
