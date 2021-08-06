@@ -11,7 +11,7 @@ const Button = ({ type, handleClick }) => {
       type="button"
       className="type-filter-item"
       style={style}
-      data-testid="type-filter-item"
+      data-testid="button"
       onClick={(e) => handleClick(e.target.innerText)}
     >
       {type.name}
