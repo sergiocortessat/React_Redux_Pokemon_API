@@ -5,43 +5,47 @@ exports[`PokemonStat Card with Link should match with snapshot 1`] = `
   className="wrapper"
 >
   <div
-    className="inner info"
+    className="inner"
   >
-    <h2>
-      ID
-       
-      #
-      
-    </h2>
-    <h2>
-      HEIGHT
-       
-      0
-    </h2>
-    <h2>
-      WEIGHT
-       
-      PokemonStats
-      0
-    </h2>
     <div
-      className="stat-type"
+      className="info"
     >
       <h2>
-        TYPE
+        ID
+         
+        #
+        
       </h2>
-      <h3
-        className="type0"
-      />
-      <h3
-        className="type1"
-      />
+      <h2>
+        HEIGHT
+         
+        0
+      </h2>
+      <h2>
+        WEIGHT
+         
+        PokemonStats
+        0
+      </h2>
+      <div
+        className="stat-type"
+      >
+        <h2>
+          TYPE
+        </h2>
+        <h3
+          className="type0"
+        />
+        <h3
+          className="type1"
+        />
+      </div>
+      <h2>
+        NEXT-EVOLUTION
+         
+        NO-EVOLUTION
+      </h2>
     </div>
-    <h2>
-      NEXT-EVOLUTION
-       
-      NO-EVOLUTION
-    </h2>
     <div
       className="stat-ability"
     >

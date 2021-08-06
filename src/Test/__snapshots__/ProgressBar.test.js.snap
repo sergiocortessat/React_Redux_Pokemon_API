@@ -8,7 +8,7 @@ exports[`Header with Link should match with snapshot 1`] = `
       "borderRadius": 50,
       "height": 20,
       "margin": 10,
-      "width": "100%",
+      "width": "80%",
     }
   }
 >
@@ -33,7 +33,7 @@ exports[`Header with Link should match with snapshot 1`] = `
         }
       }
     >
-      0 undefined
+      0
     </span>
   </div>
 </div>

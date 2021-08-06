@@ -5,22 +5,26 @@ exports[`Pokemon stats should match with snapshot 1`] = `
   className="wrapper"
 >
   <div
-    className="inner info"
+    className="inner"
   >
-    <h2>
-      ID
-       
-      #
-    </h2>
-    <h2>
-      HEIGHT
-       
-    </h2>
-    <h2>
-      WEIGHT
-       
-      PokemonStats
-    </h2>
+    <div
+      className="info"
+    >
+      <h2>
+        ID
+         
+        #
+      </h2>
+      <h2>
+        HEIGHT
+         
+      </h2>
+      <h2>
+        WEIGHT
+         
+        PokemonStats
+      </h2>
+    </div>
     <div
       className="description"
     >
