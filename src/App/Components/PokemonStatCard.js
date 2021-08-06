@@ -21,43 +21,45 @@ const PokemonStatCard = ({ pokemon }) => {
 
   return (
     <div className="wrapper">
-      <div className="inner info">
-        <h2>
-          ID
-          {' '}
-          #
-          {pokemon.id}
+      <div className="inner">
+        <div className="info">
+          <h2>
+            ID
+            {' '}
+            #
+            {pokemon.id}
 
-        </h2>
-        <h2>
-          HEIGHT
-          {' '}
-          {pokemon.height}
-        </h2>
-        <h2>
-          WEIGHT
-          {' '}
-          PokemonStats
-          {pokemon.weight}
-        </h2>
-        {pokemon.type && (
-        <div className="stat-type">
-          <h2>TYPE</h2>
-          <h3 className="type0">
-            {pokemon.type[0]}
-          </h3>
-          <h3 className="type1">
-            {pokemon.type[1]}
-          </h3>
+          </h2>
+          <h2>
+            HEIGHT
+            {' '}
+            {pokemon.height}
+          </h2>
+          <h2>
+            WEIGHT
+            {' '}
+            PokemonStats
+            {pokemon.weight}
+          </h2>
+          {pokemon.type && (
+          <div className="stat-type">
+            <h2>TYPE</h2>
+            <h3 className="type0">
+              {pokemon.type[0]}
+            </h3>
+            <h3 className="type1">
+              {pokemon.type[1]}
+            </h3>
+          </div>
+          )}
+          {pokemon.evolution && (
+          <h2>
+            NEXT-EVOLUTION
+            {' '}
+            {pokemon.evolution.next ? pokemon.evolution.next[0][1].toUpperCase() : 'NO-EVOLUTION'}
+          </h2>
+          )}
         </div>
-        )}
-        {pokemon.evolution && (
-        <h2>
-          NEXT-EVOLUTION
-          {' '}
-          {pokemon.evolution.next ? pokemon.evolution.next[0][1].toUpperCase() : 'NO-EVOLUTION'}
-        </h2>
-        )}
         {pokemon.ability && (
         <div className="stat-ability">
           <h2>ABILITY</h2>

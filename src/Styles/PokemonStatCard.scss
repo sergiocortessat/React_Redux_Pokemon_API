@@ -4,12 +4,21 @@
   align-items: center;
 
   .inner {
-    margin: 10px 10px 50px 10px;
-    background-color: rgba(247, 85, 85, 0.6);
+    margin: 10px 50px 50px 10px;
     border-radius: 10px;
     border: 0.5px solid rgba(247, 85, 85, 0.6);
     padding: 10px;
     height: auto;
+    background:
+      linear-gradient(
+        15deg,
+        #dd580a 64%,
+        #bd6328 70%,
+        #d3561d 81%,
+        rgb(240, 89, 70) 86%,
+        #962f07 89%,
+        #c2ab60 100%
+      );
 
     * {
       margin-bottom: 8px;
@@ -64,6 +73,23 @@
     .stat-image {
       width: 100%;
       max-width: 80%;
+    }
+
+    .description {
+      margin: 15px 0;
+      text-align: center;
+      border: 0.5px solid black;
+      border-radius: 5px;
+      box-sizing: border-box;
+      background: linear-gradient(
+        15deg,
+        #cad5b5 64%,
+        #dde2d4 70%,
+        #dde2d4 81%,
+        #fff 86%,
+        #dde2d4 89%,
+        #dde2d4 100%
+      );
     }
   }
 
