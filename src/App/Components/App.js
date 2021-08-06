@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import {
   BrowserRouter, Switch, Route, Router,
 } from 'react-router-dom';
@@ -8,15 +9,13 @@ import Header from './Header';
 function App() {
   return (
     <BrowserRouter>
-      <Router>
-        <div className="App">
-          <Header />
-          <Switch>
-            <Route exact path="/stats/:id" component={PokemonStat} />
-            <Route path="/" component={PokemonList} />
-          </Switch>
-        </div>
-      </Router>
+      <div className="App">
+        <Header />
+        <Switch>
+          <Route exact path="/stats/:id" component={PokemonStat} />
+          <Route path="/" component={PokemonList} />
+        </Switch>
+      </div>
     </BrowserRouter>
   );
 }

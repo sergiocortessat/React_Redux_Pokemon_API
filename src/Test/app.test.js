@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import store from '../redux/store';
+import store from '../Redux/store';
 import Home from '../App/Components/App';
 
-test('renders img', () => {
+it('renders img', () => {
   render(
     <Provider store={store}>
       <Home />
