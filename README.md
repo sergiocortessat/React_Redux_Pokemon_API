@@ -6,13 +6,13 @@
 
 ## About The Project
 
-the pokemon API project allows the users to load all pokemon's in existence until date. As well users can check on specific pokemon's and see their starts, extra information and types.
+The pokemon API project allows the users to load all pokemon's in existence until date. As well users can check on specific pokemon's and see their starts, extra information and types.
 
 <br />
 
 ## Live Version
 
-* [Live Demo]("https://pokemon-api-searcher.herokuapp.com/") 
+* [Live Demo](https://pokemon-api-searcher.herokuapp.com/) 
 
 <br />
 
