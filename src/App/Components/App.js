@@ -1,6 +1,5 @@
-/* eslint-disable no-unused-vars */
 import {
-  BrowserRouter, Switch, Route, Router,
+  BrowserRouter, Switch, Route,
 } from 'react-router-dom';
 import PokemonStat from '../Containers/PokemonStats';
 import PokemonList from '../Containers/PokomenList';
