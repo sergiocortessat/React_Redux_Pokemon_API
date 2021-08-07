@@ -4,7 +4,7 @@
   align-items: center;
 
   .inner {
-    margin: 10px 50px 50px 10px;
+    margin: 0 auto;
     border-radius: 10px;
     border: 0.5px solid rgba(247, 85, 85, 0.6);
     padding: 10px;
@@ -70,11 +70,6 @@
       }
     }
 
-    .stat-image {
-      width: 100%;
-      max-width: 80%;
-    }
-
     .description {
       margin: 15px 0;
       text-align: center;
@@ -95,7 +90,7 @@
   }
 
   .inner2 {
-    margin: 40px 50px 50px 50px;
+    margin: 0 auto;
     text-align: center;
     height: 400px;
 
@@ -112,6 +107,7 @@
     transform: rotate(0);
   }
 }
+// Language: HTML
 
 .loading {
   text-align: center;
@@ -130,6 +126,7 @@
     align-items: center;
 
     .inner {
+      margin: 10px 50px 50px 10px;
       transition: 0.3s;
       transform: rotateY(40deg);
       width: 300px;
@@ -141,6 +138,7 @@
     }
 
     .inner2 {
+      margin: 40px 50px 50px 50px;
       transition: 0.3s;
       transform: rotateY(-40deg);
       width: 300px;
