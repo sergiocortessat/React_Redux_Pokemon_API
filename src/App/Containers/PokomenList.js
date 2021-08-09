@@ -3,14 +3,14 @@ import { useSelector, useDispatch } from 'react-redux';
 import fetchPokemon from '../../API/ApiFetch';
 import CardList from '../Components/PokemonListCard';
 import Filter from '../Components/Filter';
-import { updatePokemonSearchResults } from '../../Redux/Slices/homeFetchSlice';
+import { updatePokemonSearchResults } from '../../Redux/Actions/index';
 
 const PokemonList = () => {
   const [pokemon, setPokemon] = useState([]);
   const [reset, setReset] = useState(false);
   const [typePokemon, setTypePokemon] = useState([]);
   const [inputFilter, setInputFilter] = React.useState('');
-  const { pokemonSearchResults } = useSelector((state) => state.pokemon);
+  const { pokemonSearchResults } = useSelector((state) => state.Pokemon);
   const dispatch = useDispatch();
 
   const handleClick = (type) => {
@@ -53,7 +53,7 @@ const PokemonList = () => {
       />
       {/* Pokemon List component */}
       <div className="pokemon-list-items">
-        {pokemon.map((pokemon) => (
+        {pokemon && pokemon.map((pokemon) => (
           <CardList key={pokemon.id} pokemon={pokemon} />
         ))}
       </div>

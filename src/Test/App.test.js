@@ -1,8 +1,10 @@
 import { render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import store from '../Redux/store';
+import { createStore } from 'redux';
+import Reducers from '../Redux/Reducers';
 import Home from '../App/Components/App';
 
+const store = createStore(Reducers);
 it('renders img', () => {
   render(
     <Provider store={store}>

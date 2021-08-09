@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { updateFilteredPokemonSearchResults } from '../../Redux/Slices/homeFetchSlice';
+import { updateFilteredPokemonSearchResults } from '../../Redux/Actions';
 import fetchPokemon from '../../API/ApiFetch';
 import PokemonStatCard from '../Components/PokemonStatCard';
 
@@ -10,7 +10,7 @@ const PokemonStat = () => {
   const [reset, setReset] = useState(false);
   const [singlePokemon, setSinglePokemon] = useState({});
   const dispatch = useDispatch();
-  const { filteredPokemonSearchResults } = useSelector((state) => state.pokemon);
+  const { filteredPokemonSearchResults } = useSelector((state) => state.Pokemon);
 
   useEffect(() => {
     if (id !== singlePokemon.id || filteredPokemonSearchResults.length === 0) {

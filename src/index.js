@@ -1,14 +1,14 @@
-/* eslint-disable import/order */
-/* eslint-disable no-unused-vars */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 import App from './App/Components/App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
-import { Provider } from 'react-redux';
-import store from './Redux/store';
+import reducers from './Redux/Reducers';
 
+const store = createStore(reducers);
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>

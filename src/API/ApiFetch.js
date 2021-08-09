@@ -50,7 +50,6 @@ const fetchPokemons = async () => {
     });
     return strippedPokemons;
   } catch (error) {
-    console.log(error);
     return error;
   }
 };
