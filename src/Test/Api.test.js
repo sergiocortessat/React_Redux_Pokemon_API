@@ -17,7 +17,7 @@ describe('Pokemon API fetch', () => {
       expect(typeof result).notToBe('CSV');
     });
   });
-  test('Receiving information from API to populate store', () => {
+  test('Receiving negative information from API to populate store', () => {
     fetchPokemons().then((result) => {
       expect(typeof result).notToBe('JSON');
     }).catch((err) => err);

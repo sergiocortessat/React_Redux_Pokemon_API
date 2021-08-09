@@ -6,7 +6,7 @@ import '../../Styles/Header.scss';
 const Header = () => (
   <Link to="/">
     <div className="searchContainer" data-testid="header">
-      <img src={logo} alt="none" />
+      <img src={logo} alt="none" data-testid="no-header" />
     </div>
   </Link>
 );
