@@ -1,3 +1,10 @@
+.stat-name {
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+}
+
 .wrapper {
   margin: 1em auto;
   display: inline-block;
@@ -6,7 +13,7 @@
   .inner {
     margin: 0 auto;
     border-radius: 10px;
-    border: 0.5px solid rgba(247, 85, 85, 0.6);
+    border: 0.5px solid black;
     padding: 10px;
     height: auto;
     width: 340px;
@@ -87,14 +94,31 @@
           #dde2d4 89%,
           #dde2d4 100%
         );
+
+      h3 {
+        padding: 10px;
+      }
     }
   }
 
   .inner2 {
     margin: 0 auto;
+    border: 0.5px solid black;
     text-align: center;
     height: 400px;
     width: 310px;
+    max-width: 310px;
+    border-radius: 10px;
+    background:
+      linear-gradient(
+        15deg,
+        #dd580a 64%,
+        #bd6328 70%,
+        #d3561d 81%,
+        rgb(240, 89, 70) 86%,
+        #962f07 89%,
+        #c2ab60 100%
+      );
 
     h2 {
       margin-bottom: 10px;
