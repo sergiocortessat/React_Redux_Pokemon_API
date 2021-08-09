@@ -11,3 +11,12 @@ test('Should render the Header component', () => {
   const element = screen.getByTestId('header');
   expect(element).toBeInTheDocument();
 });
+test('Should not render the Header component', () => {
+  render(
+    <BrowserRouter>
+      <Header />
+    </BrowserRouter>,
+  );
+  const element = screen.getByTestId('no-header');
+  expect(element).toBeInTheDocument();
+});
