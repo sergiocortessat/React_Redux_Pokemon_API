@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PokemonStat Card with Link should match with snapshot 1`] = `
+Array [
+  <div
+    className="stat-name"
+  >
+    <h1>
+      #0
+       - 
+      
+    </h1>
+  </div>,
+  <div
+    className="wrapper"
+  >
+    <div
+      className="inner"
+    >
+      <div
+        className="info"
+      >
+        <h2>
+          ID
+           
+          #
+          0
+        </h2>
+        <h2>
+          HEIGHT
+           
+          
+        </h2>
+        <h2>
+          WEIGHT
+           
+          
+        </h2>
+        <div
+          className="stat-type"
+        >
+          <h2>
+            TYPE
+          </h2>
+          <h3
+            className="type0"
+          />
+          <h3
+            className="type1"
+          />
+        </div>
+        <h2>
+          NEXT-EVOLUTION
+           
+          NO-EVOLUTION
+        </h2>
+      </div>
+      <div
+        className="stat-ability"
+      >
+        <h2>
+          ABILITY
+        </h2>
+        <h3
+          className="ability1"
+        >
+          --
+        </h3>
+        <h3
+          className="ability2"
+        >
+          --
+        </h3>
+      </div>
+      <div
+        className="description"
+      >
+        <h2>
+          DESCRIPTION
+        </h2>
+        <h3>
+          
+        </h3>
+      </div>
+    </div>
+    <div
+      className="stats-image"
+    >
+      <img
+        alt={0}
+        src=""
+      />
+    </div>
+    <div
+      className="inner2 stats"
+    >
+      <h2>
+        POKEMON STATS
+      </h2>
+      <div />
+    </div>
+  </div>,
+]
+`;
