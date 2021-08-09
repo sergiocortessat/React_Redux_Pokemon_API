@@ -63,7 +63,9 @@ Array [
       <h2>
         POKEMON STATS
       </h2>
-      <div />
+      <div
+        className="progress-bar"
+      />
     </div>
   </div>,
 ]
