@@ -90,7 +90,7 @@ const PokemonStatCard = ({ pokemon }) => {
         </div>
         <div className="inner2 stats">
           <h2>POKEMON STATS</h2>
-          <div>
+          <div className="progress-bar">
             {completed.map((stat) => (
               <div
                 key={stat.color}
