@@ -34,3 +34,13 @@ test('renders button', () => {
   const button = screen.getAllByRole('button');
   expect(button).toBeInstanceOf(Array);
 });
+
+test('not rendering button', () => {
+  render(
+    <Provider store={store}>
+      <Home />
+    </Provider>,
+  );
+  const button = screen.getAllByRole('button');
+  expect(button).not.toBeInstanceOf(String);
+});

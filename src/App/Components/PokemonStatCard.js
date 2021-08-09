@@ -105,7 +105,7 @@ const PokemonStatCard = ({ pokemon }) => {
 
 PokemonStatCard.defaultProps = {
   pokemon: {
-    id: [],
+    id: 0,
     name: '',
     height: '',
     weight: '',
@@ -119,7 +119,7 @@ PokemonStatCard.defaultProps = {
 
 PokemonStatCard.propTypes = {
   pokemon: PropTypes.shape({
-    id: PropTypes.arrayOf(PropTypes.string),
+    id: PropTypes.number,
     name: PropTypes.string,
     height: PropTypes.string,
     weight: PropTypes.string,
