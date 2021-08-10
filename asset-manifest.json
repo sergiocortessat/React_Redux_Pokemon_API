@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.25c1b828.chunk.css",
-    "main.js": "/static/js/main.c8a5fb6a.chunk.js",
-    "main.js.map": "/static/js/main.c8a5fb6a.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.5ac63a90.js",
-    "runtime-main.js.map": "/static/js/runtime-main.5ac63a90.js.map",
-    "static/js/2.f0b4f3a9.chunk.js": "/static/js/2.f0b4f3a9.chunk.js",
-    "static/js/2.f0b4f3a9.chunk.js.map": "/static/js/2.f0b4f3a9.chunk.js.map",
-    "static/js/3.b25d6240.chunk.js": "/static/js/3.b25d6240.chunk.js",
-    "static/js/3.b25d6240.chunk.js.map": "/static/js/3.b25d6240.chunk.js.map",
-    "index.html": "/index.html",
-    "service-worker.js": "/service-worker.js",
-    "service-worker.js.map": "/service-worker.js.map",
-    "static/css/main.25c1b828.chunk.css.map": "/static/css/main.25c1b828.chunk.css.map",
-    "static/js/2.f0b4f3a9.chunk.js.LICENSE.txt": "/static/js/2.f0b4f3a9.chunk.js.LICENSE.txt",
-    "static/media/logo.7d8a9193.svg": "/static/media/logo.7d8a9193.svg"
+    "main.css": "/React_Redux_Pokemon_API/static/css/main.25c1b828.chunk.css",
+    "main.js": "/React_Redux_Pokemon_API/static/js/main.e48bfdfe.chunk.js",
+    "main.js.map": "/React_Redux_Pokemon_API/static/js/main.e48bfdfe.chunk.js.map",
+    "runtime-main.js": "/React_Redux_Pokemon_API/static/js/runtime-main.8764a3c5.js",
+    "runtime-main.js.map": "/React_Redux_Pokemon_API/static/js/runtime-main.8764a3c5.js.map",
+    "static/js/2.f0b4f3a9.chunk.js": "/React_Redux_Pokemon_API/static/js/2.f0b4f3a9.chunk.js",
+    "static/js/2.f0b4f3a9.chunk.js.map": "/React_Redux_Pokemon_API/static/js/2.f0b4f3a9.chunk.js.map",
+    "static/js/3.b25d6240.chunk.js": "/React_Redux_Pokemon_API/static/js/3.b25d6240.chunk.js",
+    "static/js/3.b25d6240.chunk.js.map": "/React_Redux_Pokemon_API/static/js/3.b25d6240.chunk.js.map",
+    "index.html": "/React_Redux_Pokemon_API/index.html",
+    "service-worker.js": "/React_Redux_Pokemon_API/service-worker.js",
+    "service-worker.js.map": "/React_Redux_Pokemon_API/service-worker.js.map",
+    "static/css/main.25c1b828.chunk.css.map": "/React_Redux_Pokemon_API/static/css/main.25c1b828.chunk.css.map",
+    "static/js/2.f0b4f3a9.chunk.js.LICENSE.txt": "/React_Redux_Pokemon_API/static/js/2.f0b4f3a9.chunk.js.LICENSE.txt",
+    "static/media/logo.7d8a9193.svg": "/React_Redux_Pokemon_API/static/media/logo.7d8a9193.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.5ac63a90.js",
+    "static/js/runtime-main.8764a3c5.js",
     "static/js/2.f0b4f3a9.chunk.js",
     "static/css/main.25c1b828.chunk.css",
-    "static/js/main.c8a5fb6a.chunk.js"
+    "static/js/main.e48bfdfe.chunk.js"
   ]
 }
