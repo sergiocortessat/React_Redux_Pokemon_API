@@ -1,51 +1,70 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pokemon stats should match with snapshot 1`] = `
-<div
-  className="wrapper"
->
+Array [
   <div
-    className="inner"
+    className="button-home"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      HOME
+    </a>
+  </div>,
+  <div
+    className="stat-name"
+  >
+    <h1>
+      #undefined
+       - 
+    </h1>
+  </div>,
+  <div
+    className="wrapper"
   >
     <div
-      className="info"
+      className="inner"
     >
-      <h2>
-        ID
-         
-        #
-      </h2>
-      <h2>
-        HEIGHT
-         
-      </h2>
-      <h2>
-        WEIGHT
-         
-        PokemonStats
-      </h2>
+      <div
+        className="info"
+      >
+        <h2>
+          ID
+           
+          #
+        </h2>
+        <h2>
+          HEIGHT
+           
+        </h2>
+        <h2>
+          WEIGHT
+           
+        </h2>
+      </div>
+      <div
+        className="description"
+      >
+        <h2>
+          DESCRIPTION
+        </h2>
+        <h3 />
+      </div>
     </div>
     <div
-      className="description"
+      className="stats-image"
+    >
+      <img />
+    </div>
+    <div
+      className="inner2 stats"
     >
       <h2>
-        DESCRIPTION
+        POKEMON STATS
       </h2>
-      <h3 />
+      <div />
     </div>
-  </div>
-  <div
-    className="stats-image"
-  >
-    <img />
-  </div>
-  <div
-    className="inner2 stats"
-  >
-    <h2>
-      POKEMON STATS
-    </h2>
-    <div />
-  </div>
-</div>
+  </div>,
+]
 `;

@@ -27,7 +27,7 @@ exports[`Header with Link should match with snapshot 1`] = `
     <span
       style={
         Object {
-          "color": "white",
+          "color": "black",
           "fontWeight": "bold",
           "padding": 5,
         }
