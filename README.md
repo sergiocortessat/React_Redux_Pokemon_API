@@ -12,7 +12,7 @@ The pokemon API project allows the users to load all pokemon's in existence unti
 
 ## Live Version
 
-* [Live Demo](https://pokemon-api-searcher.herokuapp.com/) 
+* [Live Demo]("https://sergiocortessat.github.io/React_Redux_Pokemon_API/") 
 
 <br />
 
