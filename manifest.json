@@ -1,0 +1,36 @@
+{
+  "short_name": "Pokemon API Database",
+  "name": "Pokemon API Database",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 24x24",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo16.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "logo32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": "https://sergiocortessat.github.io/React_Redux_Pokemon_API/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
