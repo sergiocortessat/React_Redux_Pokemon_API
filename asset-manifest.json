@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/React_Redux_Pokemon_API/static/css/main.efdbd832.chunk.css",
+    "main.css": "/React_Redux_Pokemon_API/static/css/main.17e4bedc.chunk.css",
     "main.js": "/React_Redux_Pokemon_API/static/js/main.cb8eeb82.chunk.js",
     "main.js.map": "/React_Redux_Pokemon_API/static/js/main.cb8eeb82.chunk.js.map",
     "runtime-main.js": "/React_Redux_Pokemon_API/static/js/runtime-main.8764a3c5.js",
@@ -12,14 +12,14 @@
     "index.html": "/React_Redux_Pokemon_API/index.html",
     "service-worker.js": "/React_Redux_Pokemon_API/service-worker.js",
     "service-worker.js.map": "/React_Redux_Pokemon_API/service-worker.js.map",
-    "static/css/main.efdbd832.chunk.css.map": "/React_Redux_Pokemon_API/static/css/main.efdbd832.chunk.css.map",
+    "static/css/main.17e4bedc.chunk.css.map": "/React_Redux_Pokemon_API/static/css/main.17e4bedc.chunk.css.map",
     "static/js/2.f0b4f3a9.chunk.js.LICENSE.txt": "/React_Redux_Pokemon_API/static/js/2.f0b4f3a9.chunk.js.LICENSE.txt",
     "static/media/logo.102f05ca.svg": "/React_Redux_Pokemon_API/static/media/logo.102f05ca.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.8764a3c5.js",
     "static/js/2.f0b4f3a9.chunk.js",
-    "static/css/main.efdbd832.chunk.css",
+    "static/css/main.17e4bedc.chunk.css",
     "static/js/main.cb8eeb82.chunk.js"
   ]
 }
