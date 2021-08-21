@@ -1,7 +1,11 @@
+/* eslint-disable no-unused-labels */
+/* eslint-disable jsx-a11y/heading-has-content */
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import '../../Styles/PokemonStatCard.scss';
 import ProgressBar from './ProgressBar';
+import { types } from '../../staticData';
 
 const PokemonStatCard = ({ pokemon }) => {
   const [completed, setCompleted] = useState([]);
@@ -19,6 +23,12 @@ const PokemonStatCard = ({ pokemon }) => {
     setCompleted(([...pokemonStats]));
   }, [pokemon]);
 
+  // const style = (name) => (
+  //   if (name === ) {
+  //   {
+  //   backgroundColor: types.color,
+  //   color: types.text,
+  // });
   return (
     <>
       <div className="stat-name">
@@ -51,8 +61,10 @@ const PokemonStatCard = ({ pokemon }) => {
             {pokemon.type && (
             <div className="stat-type">
               <h2>TYPE</h2>
-              <h3 className="type0">
-                {pokemon.type[0]}
+              <h3
+                className="type0"
+              >
+                hello
               </h3>
               <h3 className="type1">
                 {pokemon.type[1]}
